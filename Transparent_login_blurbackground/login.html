@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagepage/favicon.ico" type="imagepage/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Login_Page</title>
+</head>
+<body>
+    <div class="container">
+        
+        <img src="imagepage/avatar.jpeg" alt="" class="avatar">
+        <h2>Contact_Form</h2>
+        <form action="">
+            <p>Text</p>
+            <!-- <input type="text" placeholder="username"> -->
+            <input type="text" username="username" id="username">
+            <p>Email</p>
+            <input type="email" username="email" id="email">
+            <p>Password</p>
+            <input type="password" username="password" id="password"> 
+            <p><input type="checkbox">Click Me!!</p>
+            <input type="submit" class"btn" value="Sign-In" onclick="validate()">
+            <p><a href="#" class="button">Forget Password</a></p>
+            <span><a href="#" class="button">Create Login</a></span>
+        </form>
+
+    </div>
+    <script>
+        function validate(){
+            var username=document.getElementById("username").value
+            var email=document.getElementById("email").value
+            var password=document.getElementById("password").value
+
+            if(username=="abc" && email=="abc@gmail.com" && password=="123"){
+                alert("Happy!!!Login");
+            }
+            else{
+                alert("Sad!!!Fail");
+            }
+        }
+    </script>
+</body>
+</html>
